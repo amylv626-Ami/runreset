@@ -202,7 +202,12 @@ nav.scrolled {
   background:var(--warm); border-radius:8px; overflow:hidden;
   display:flex; flex-direction:column;
   transition:transform .2s, box-shadow .2s;
+  border-bottom: 3px solid var(--mist);
 }
+.prod-card:nth-child(1) { border-bottom-color: var(--fern); }
+.prod-card:nth-child(2) { border-bottom-color: var(--forest); }
+.prod-card:nth-child(3) { border-bottom-color: var(--moss); }
+.prod-card:nth-child(4) { border-bottom-color: var(--fern); }
 .prod-card:hover { transform:translateY(-4px); box-shadow:0 16px 40px rgba(45,74,45,.12); }
 
 .prod-head {
@@ -232,8 +237,8 @@ nav.scrolled {
 .prod-divider { height:1px; background:var(--mist); margin:0 28px; }
 .prod-body { padding:18px 28px; font-size:14px; color:var(--mid); line-height:1.9; flex:1; }
 
-.prod-pts { padding:0 28px; list-style:none; display:flex; flex-direction:column; gap:7px; }
-.prod-pts li { font-size:13px; color:var(--fern); display:flex; gap:8px; }
+.prod-pts { padding:0 28px 28px; list-style:none; display:flex; flex-direction:column; gap:9px; margin-top:4px; }
+.prod-pts li { font-size:13px; color:var(--fern); display:flex; gap:8px; line-height:1.6; }
 .prod-pts li::before { content:'→'; color:var(--moss); flex-shrink:0; }
 
 .prod-footer {
@@ -791,13 +796,6 @@ footer {
         <li>配速测试与专项训练</li>
         <li>跑者社群交流与连接</li>
       </ul>
-      <div class="prod-footer">
-        <div>
-          <div class="prod-price-lbl">参与方式</div>
-          <div class="prod-price">免费  /  低价参与</div>
-        </div>
-        <div class="prod-price-lbl">上海 · 运动社群</div>
-      </div>
     </div>
 
     <div class="prod-card reveal reveal-delay-1">
@@ -815,13 +813,6 @@ footer {
         <li>个性化运动营养方案定制</li>
         <li>赛前策略规划与心理准备</li>
       </ul>
-      <div class="prod-footer">
-        <div>
-          <div class="prod-price-lbl">参考价格</div>
-          <div class="prod-price">¥1,500 – 3,000 / 人</div>
-        </div>
-        <div class="prod-price-lbl">线上 + 线下小班</div>
-      </div>
     </div>
 
     <div class="prod-card reveal reveal-delay-2">
@@ -839,13 +830,6 @@ footer {
         <li>赛前训练计划 + 赛事策略指导</li>
         <li>赛后城市深度探索行程</li>
       </ul>
-      <div class="prod-footer">
-        <div>
-          <div class="prod-price-lbl">参考价格</div>
-          <div class="prod-price">¥6,000 – 10,000+ / 人</div>
-        </div>
-        <div class="prod-price-lbl">日韩东南亚 · 精品小团</div>
-      </div>
     </div>
 
     <div class="prod-card reveal reveal-delay-3">
@@ -863,13 +847,6 @@ footer {
         <li>小众徒步路线，深入自然</li>
         <li>文化体验与运动深度融合</li>
       </ul>
-      <div class="prod-footer">
-        <div>
-          <div class="prod-price-lbl">参考价格</div>
-          <div class="prod-price">¥3,000 – 8,000 / 人</div>
-        </div>
-        <div class="prod-price-lbl">海外 · 定制路线</div>
-      </div>
     </div>
 
   </div>
@@ -1005,8 +982,9 @@ footer {
           <div style="font-family:'Noto Serif SC',serif;font-size:18px;font-weight:700;color:var(--cream);margin-bottom:6px;">A米</div>
           <div style="font-size:13px;color:var(--sage);line-height:2;">
             10 年跑步爱好者<br>
-            马拉松 · 越野 · 徒步 等多运动爱好者<br>
-            全马 PB 3:14
+            马拉松 · 越野 · 徒步，喜欢旅行<br>
+            用跑步探索新的国家和城市<br>
+            全马 PB 3:14  ·  半马 PB 1:30
           </div>
         </div>
         <div>
@@ -1028,9 +1006,7 @@ footer {
         <div>
           <div style="font-family:'Syne',sans-serif;font-size:9px;letter-spacing:3px;color:var(--stone);text-transform:uppercase;margin-bottom:10px;">所在地</div>
           <div style="font-size:13px;color:var(--sage);line-height:2;">
-            上海 · Shanghai<br>
-            所有合作均可从一次沟通开始<br>
-            欢迎发送任何想法
+            上海 · Shanghai
           </div>
         </div>
       </div>
